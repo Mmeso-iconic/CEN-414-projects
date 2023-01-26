@@ -1,0 +1,57 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script type="text/javascript">
+            /*const mat = [[1, 2, 3], [1, 2, 3], [1, 2, 3]];
+            const mat1 = [[1, 2, 3], [1, 2, 3], [1, 2, 3]];
+            var matadd = new Array(3);
+            document.write("Matrix One: " + '<br>');
+            for (let x = 0; x < mat.length; x++) {
+                    document.write("[" + mat[x] + ']' + '<br>');
+                };
+                document.write("Matrix Two: " + '<br>');
+            for (let y = 0; y < mat1.length; y++) {
+                        document.write("[" + mat1[y] + ']' + '<br>');
+                };
+            for (let a = 0; a < matadd.length; a++)
+            {
+                matadd[a] = new Array(3);
+            }
+            for (var i=0; i < mat.length; i++){
+                for (let j = 0; j< mat[i].length; j++) {
+                    matadd[i][j] = mat[i][j] + mat1[i][j];
+                }
+            }  
+            document.write("Matrix Three: " + '<br>')
+            for (i = 0; i < mat.length; i++) {
+                document.write("[" + matadd[i] + "]" + '<br>');
+            }*/
+            
+            var matric = [[5, 6],[2, 5]];
+            let x = 2;
+            if (matric.length > 1 && matric[0].length > 1 && matric.length == matric[0].length )
+            {
+                document.write('This is a ' + matric.length + ' x ' + matric[0].length + ' matrix' +'<br>');
+                document.write('Matrix: ' + '<br>');
+                for (let i = 0; i < matric.length; i++) {
+                    document.write("[" + matric[i] + "]" + "<br>");
+                }
+                if(matric.length == 2)
+                {
+                        det1 = (matric[0][0] * matric[1][1]) - (matric[0][1] * matric[1][0]);
+                        document.write('Determinant of the matrix =' + det1 + '<br>');
+                }   
+            }
+            else
+            {
+                    document.write('Please enter a square matrix!');
+            }
+            
+
+            
+            
+            
+        </script>
+    </body>
+</html>
